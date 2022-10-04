@@ -15,7 +15,6 @@ public class Buy {
   }
 
   public String makePurchase(int vendorCode, int buyerCode, String item) {
-    /*Database database = new Database();*/
     if (buyerCode == vendorCode) {
       throw new IllegalSaleException(vendorCode, buyerCode);
     }
